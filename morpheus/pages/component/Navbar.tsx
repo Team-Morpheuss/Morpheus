@@ -5,7 +5,7 @@ import { Box, Button, Image, Text } from "@chakra-ui/react";
 
 
 
-const NavBarItem = ({ title, classprops }) => (
+const NavBarItem = ({ title, classprops }: any) => (
   <li className={`mx-4 cursor-pointer ${classprops}`}>{title}</li>
 );
 
@@ -22,7 +22,7 @@ const Navbar = () => {
          
           src="./nft/logo.png"
          />
-         <Text className="text-xl sm:text-3xl text-white text-gradient py-1 ml-5">
+         <Text className="text-xl sm:text-3xl text-white text-white py-1 ml-5">
          Morpheus
          </Text>
       </Box>
