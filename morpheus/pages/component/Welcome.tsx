@@ -66,7 +66,7 @@ const Welcome = () => {
             </Text>
           </h3>
           <p className="text-left text-2xl mt-5 text-white font-light md:w-9/12text-base">
-            Marketplace for different NFT collection, non fungible token NFTS!
+            Marketplace for different NFT collection, non-fungible token NFTS!
           </p>
 
           <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
