@@ -55,12 +55,14 @@ const Welcome = () => {
               <Text
                 as={'span'}
                 position={'relative'}
+                className= "textFont"
                 _after={{
                   content: "''",
                   width: 'full',
                   height: useBreakpointValue({ base: '20%', md: '30%' }),
                   position: 'absolute',
                   bottom: 1,
+                  fontcolor: 'white',
                   fontSize: 2,
                   left: 0,
                   bg: 'blue.400',
@@ -93,7 +95,7 @@ const Welcome = () => {
             </Text>
           </h3>
           <p className="text-left text-2xl mt-5 text-white font-light md:w-9/12text-base">
-            Marketplace for different NFT collection, <br/> non-fungible token NFTS!
+            Marketplace for the best NFT collections
           </p>
 
           <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
