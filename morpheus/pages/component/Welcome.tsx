@@ -41,20 +41,20 @@ const Welcome = () => {
     <>
       <Box
         ml={{ base: '18%', md: '24px' }}
-        className="flex mf:flex-row flex-col items-start justify-between py-20  "
+        className="flex mf:flex-row flex-col items-start justify-between py-20 mt-20 "
       >
         <div className="flex flex-1 justify-start items-start flex-col  ">
-          <h1 className="text-7xl text-white py-1 font-semibold">MORPHEUS</h1>
-          <h3 className="text-5xl">
+          <h1 className="text-7xl text-white py-1 font-semibold textFont">MORPHEUS</h1>
+          <h3 className="text-5xl font-semibold textFont">
             <Text
-              bgGradient="linear(to-r, yellow.500, purple.300, blue.500)"
+              bgGradient="linear(to-r, yellow.500, yellow.300, yellow.600, yellow.300)"
               bgClip="text"
             >
               <ReactTyped
                 strings={[
-                  'NFT Collections',
+                  'Your No1. NFT Market',
                   'Explore cool NFTs',
-                  'FromTop Creators',
+                  'From top creators',
                   'Get started',
                   'Launch the App',
                   'Access more features',
@@ -65,7 +65,7 @@ const Welcome = () => {
               />
             </Text>
           </h3>
-          <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
+          <p className="text-left text-2xl mt-5 text-white font-light md:w-9/12text-base">
             Marketplace for different NFT collection, non fungible token NFTS!
           </p>
 

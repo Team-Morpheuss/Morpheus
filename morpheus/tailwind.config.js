@@ -9,6 +9,7 @@ module.exports = {
     fontFamily: {
       display: ["Open Sans", "sans-serif"],
       body: ["Open Sans", "sans-serif"],
+      ReemKufi: ['Reem Kufi', 'sans'],
     },
     extend: {
       screens: {
