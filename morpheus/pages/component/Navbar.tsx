@@ -6,7 +6,7 @@ import { Box, Button, Image, Text } from "@chakra-ui/react";
 
 
 const NavBarItem = ({ title, classprops }: any) => (
-  <li className={`mx-4 cursor-pointer ${classprops}`}>{title}</li>
+  <li className={`mx-4 cursor-pointer ${classprops}`}></li>
 );
 
 const Navbar = () => {
@@ -34,10 +34,10 @@ const Navbar = () => {
         ))}
        <Button
               textColor="white"
-                colorScheme="linear(to-r, purple.500, purple.300, blue.500)"
+                colorScheme="linear(to-r, purple.500, purple.300,rgb(155, 39, 209))"
                 p={6}
                 className=" cursor-pointer  w-38 h-25 bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 ..."
-                bgGradient="linear(to-r, purple.500, purple.300, blue.500)"
+                bgGradient="linear(to-r, purple.500, purple.300, rgb(155, 39, 209) )"
               >
                 Launch App
               </Button>
@@ -55,7 +55,7 @@ const Navbar = () => {
             flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide-in"
           >
             <li className="text-xl w-full my-2"><AiOutlineClose onClick={() => setToggleMenu(false)} /></li>
-            {["Market", "Exchange", "Tutorials", "Wallets"].map(
+            {["Market", "Exchange"].map(
               (item, index) => <NavBarItem key={item + index} title={item} classprops="my-2 text-lg" />,
             )}
           </ul>

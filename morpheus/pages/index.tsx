@@ -1,4 +1,4 @@
-import { Box, Flex } from '@chakra-ui/react'
+import { Box, Flex, SlideFade } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -18,8 +18,8 @@ const Home: NextPage = () => {
       <Box >
      <Nav/>
      </Box>
-     <Flex  flexDirection={{base:"column", md:"column", lg:"row"}} justifyContent="center"  ml="2%" pt="20" className=" gradient-bg-welcome"  >
-      <Box className="gradient-bg-hero " w={{base:"80%", md:"100%", sm:"100%", lg:"80%", xl:"45%"}}>
+     <Flex  flexDirection={{base:"column", md:"column", lg:"row"}} justifyContent="space-evenly"  ml="2%" pt="20" className=" gradient-bg-welcome"  >
+      <Box className="gradient-bg-hero " w={{base:"80%", md:"100%", sm:"100%", lg:"80%", xl:"38%"}}>
      <Welcome/>
      </Box>
      <Box className="" p={8}>
@@ -29,6 +29,7 @@ const Home: NextPage = () => {
      <Box>
      
       </Box>
+   
      </Box>
     </>
   )
