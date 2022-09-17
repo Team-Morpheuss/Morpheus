@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,700;1,100;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Reem Kufi');
 
 * html {
   padding: 0;
@@ -16,6 +18,10 @@ body {
   color: yellow;
 }
 
+.textFont {
+  font-family: Reem Kufi;
+}
+
 .gradient-bg-welcome {
   background-color: #2b0b5f;
   background-image: radial-gradient(
@@ -23,7 +29,9 @@ body {
       rgba(93, 20, 143, 1) 0,
       transparent 50%
     ),
+    radial-gradient(at 50% 0%, rgb(202, 42, 149) 0, transparent 50%),
     radial-gradient(at 50% 0%, rgba(44, 64, 150, 1) 0, transparent 50%),
+    radial-gradient(at 100% 0%, rgb(114, 16, 160) 0, transparent 50%),
     radial-gradient(at 100% 0%, rgb(39, 10, 90, 1) 0, transparent 50%);
 }
 

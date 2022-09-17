@@ -14,7 +14,7 @@ const Hero = () => {
             w="100%"
             h="100%"
             borderRadius="7%"
-            src="./nft/nft30.gif"
+            src="./nft/nftSequence3.gif"
             alt=""
           />
         </Box>
