@@ -45,8 +45,10 @@ const Welcome = () => {
         <Box  ml={{base:"18%", md:"24px"}} className="flex mf:flex-row flex-col items-start justify-between md:p-20  ">
           <div className="flex flex-1 justify-start items-start flex-col  ">
             <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1">
-              Discover, and Explore <br /> our cool <Text bgGradient="linear(to-r, purple.500, purple.300, blue.500)" bgClip='text'>
+           MORPHEUS <Text bgGradient="linear(to-r, purple.500, purple.300, blue.500)" bgClip='text'>
                 <ReactTyped  strings={[
+             " Discover and Explore",
+             "our cool",
             "NFT Collections",
             "Top Creators",
             "Top Nfts",
