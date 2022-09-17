@@ -6,14 +6,14 @@ const Hero = () => {
     <>
       <Box
         borderRadius="5%"
-        className=""
+        className="ml-2"
         p={3}
       >
         <Box>
           <Image
-            w="100%"
-            h="100%"
-            borderRadius="7%"
+            w="90%"
+            h="70%"
+          
             src="./nft/nftSequence3.gif"
             alt=""
           />
