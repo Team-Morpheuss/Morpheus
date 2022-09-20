@@ -54,7 +54,6 @@ const Welcome = () => {
         <Heading mb="2%" fontSize={{ base: '4xl', md: '7xl', lg: '6xl' }}>
               <Text
                 as={'span'}
-                position={'relative'}
                 className= "textFont"
                 _after={{
                   content: "''",
