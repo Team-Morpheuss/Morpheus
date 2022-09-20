@@ -37,34 +37,10 @@ body {
 
 .gradient-bg-hero {
   background-color: transparent;
-  /* background-image: radial-gradient(
-      at 0% 0%,
-      rgba(248, 123, 66, 0.445) 0,
-      transparent 30%
-    ),
-    radial-gradient(at 50% 0%, rgba(134, 34, 180, 0.116) 0, transparent 30%),
-    radial-gradient(at 100% 0%, rgb(84, 14, 177) 0, transparent 30%); */
-}
-
-/* .top-right{
-  display: flex;
-  flex: 1;
-  position: relative;
-}
-
-.top-item {
-  display: flex;
-  flex: wrap;
-  overflow: hidden;
-}
-
-.top-r-diamond{
-  height: 280px;
-  width: 280px;
  
-  object-fit: contain;
-display:block;
-} */
+}
+
+
 
 .gradient-bg-services {
   background-color: #0f0e13;
