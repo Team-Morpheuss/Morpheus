@@ -1,7 +1,8 @@
 import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import '@rainbow-me/rainbowkit/styles.css';
 
+import '@rainbow-me/rainbowkit/styles.css';
+import theme from "./component/theme";
+import { MoralisProvider } from 'react-moralis'
 import {
   getDefaultWallets,
   RainbowKitProvider,
@@ -14,7 +15,7 @@ import {
 } from 'wagmi';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider,extendTheme } from '@chakra-ui/react';
 const { chains, provider } = configureChains(
   [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
   [
@@ -34,13 +35,17 @@ const wagmiClient = createClient({
   provider
 })
 
-function MyApp({ Component, pageProps }: AppProps) {
+
+
+function MyApp({ Component, pageProps }) {
   return (
     <>
      <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider chains={chains}>
-        <ChakraProvider>
+        <ChakraProvider theme={extendTheme(theme)}>
+          <MoralisProvider initializeOnMount={false}>
       <Component {...pageProps} />
+      </MoralisProvider>
       </ChakraProvider>
       </RainbowKitProvider>
     </WagmiConfig>
